@@ -1,1 +1,37 @@
+@charset "utf-8";
 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width:640px){
+   body{
+       background-color: red;
+   }
+}
+
+@media screen and (min-width:641px) and (max-width:980px){
+   body{
+       background-color: green;
+   }
+}
+
+@media screen and (min-width:981px){
+   body{
+       background-color: blue;
+   }
+}
+
+@media screen and (orientation:portrait){
+   body:after {
+       content: "横長";
+   }
+}
+
+@media screen and (orientation:landscape){
+   body:after {
+       content: "横長";
+   }
+}
